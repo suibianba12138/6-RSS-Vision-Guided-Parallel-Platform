@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">6-RSS Vision-Guided Control — System Overview</title>
+  <desc id="desc">RGB-D sensing flows through vision detection, target offsets, pose calculation, inverse kinematics, and serial commands to six servos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1425"/><stop offset="1" stop-color="#172B46"/></linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2563EB"/><stop offset="1" stop-color="#0891B2"/></linearGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0D9488"/><stop offset="1" stop-color="#16A34A"/></linearGradient>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#8BB3DF"/></marker>
+    <style>
+      text{font-family:Inter,'Segoe UI',Arial,sans-serif}
+      .title{fill:#F8FAFC;font-size:33px;font-weight:750}
+      .sub{fill:#AFC2DB;font-size:16px}
+      .head{fill:#F8FAFC;font-size:22px;font-weight:700}
+      .detail{fill:#D6E4F3;font-size:15px}
+      .foot{fill:#9FB5D0;font-size:15px}
+      .node{stroke:#7594C7;stroke-width:1;rx:16}
+      .link{stroke:#8BB3DF;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1100" height="520" rx="24" fill="url(#bg)"/>
+  <text x="46" y="62" class="title">6-RSS Vision-Guided Control</text>
+  <text x="46" y="91" class="sub">Experimental hardware–software pipeline  |  architecture illustration, not a performance result</text>
+  <rect class="node" x="44" y="138" width="303" height="111" fill="#183761"/>
+  <rect x="44" y="138" width="303" height="6" rx="3" fill="url(#top)"/>
+  <text x="65" y="181" class="head">01  RGB-D sensing</text>
+  <text x="65" y="210" class="detail">RealSense color + depth streams</text>
+  <text x="65" y="233" class="detail">640 × 480 configuration</text>
+  <rect class="node" x="396" y="138" width="303" height="111" fill="#183761"/>
+  <rect x="396" y="138" width="303" height="6" rx="3" fill="url(#top)"/>
+  <text x="417" y="181" class="head">02  Visual detection</text>
+  <text x="417" y="210" class="detail">Laser point or black rectangle</text>
+  <text x="417" y="233" class="detail">OpenCV masks and geometry</text>
+  <rect class="node" x="748" y="138" width="303" height="111" fill="#183761"/>
+  <rect x="748" y="138" width="303" height="6" rx="3" fill="url(#top)"/>
+  <text x="769" y="181" class="head">03  Target features</text>
+  <text x="769" y="210" class="detail">Pixel offset / depth / shape</text>
+  <text x="769" y="233" class="detail">Inputs to controller variants</text>
+  <path class="link" d="M350 193 H388"/>
+  <path class="link" d="M702 193 H740"/>
+  <path class="link" d="M899 256 V288 H197 V306"/>
+  <rect class="node" x="44" y="308" width="303" height="112" fill="#14423F"/>
+  <rect x="44" y="308" width="303" height="6" rx="3" fill="url(#bottom)"/>
+  <text x="65" y="351" class="head">04  Pose command</text>
+  <text x="65" y="380" class="detail">Yaw / pitch / roll setpoints</text>
+  <text x="65" y="404" class="detail">Experimental control logic</text>
+  <rect class="node" x="396" y="308" width="303" height="112" fill="#14423F"/>
+  <rect x="396" y="308" width="303" height="6" rx="3" fill="url(#bottom)"/>
+  <text x="417" y="351" class="head">05  Inverse kinematics</text>
+  <text x="417" y="380" class="detail">InK6RSS compiled DLL</text>
+  <text x="417" y="404" class="detail">Six motor-angle outputs</text>
+  <rect class="node" x="748" y="308" width="303" height="112" fill="#14423F"/>
+  <rect x="748" y="308" width="303" height="6" rx="3" fill="url(#bottom)"/>
+  <text x="769" y="351" class="head">06  Embedded actuation</text>
+  <text x="769" y="380" class="detail">Serial → ESP32 → 6 servos</text>
+  <text x="769" y="404" class="detail">Servo mapping in firmware</text>
+  <path class="link" d="M350 363 H388"/>
+  <path class="link" d="M702 363 H740"/>
+  <text x="46" y="468" class="foot">Implemented modules can be inspected in the repository; an end-to-end verified demo video will be added later.</text>
+  <text x="46" y="494" class="foot">Not to scale • Diagram covers both experimental vision modes, which use different upper-computer scripts.</text>
+</svg>
