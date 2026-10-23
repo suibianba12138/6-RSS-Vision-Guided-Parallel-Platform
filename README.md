@@ -2,11 +2,11 @@
 
 # 6-RSS Vision-Guided Parallel Platform
 
-### From RGB-D Perception to Embedded Motion Commands
+### Engineering Motion from Vision
 
 **An experimental six-actuator parallel-platform project connecting computer vision, inverse kinematics, a Python desktop controller, and ESP32 servo control.**
 
-[**System Architecture**](docs/ARCHITECTURE.md) · [**Code Guide**](docs/CODE_GUIDE.md) · [**Original Source**](调用反解DLL库/) · **Demo video: to be added**
+[**🌐 Interactive Project Website**](https://suibianba12138.github.io/6-RSS-Vision-Guided-Parallel-Platform/) · [**System Architecture**](docs/ARCHITECTURE.md) · [**Code Guide**](docs/CODE_GUIDE.md) · [**Source**](调用反解DLL库/)
 
 ![Python](https://img.shields.io/badge/Python-Desktop%20Control-3776AB?logo=python&logoColor=white)
 ![Embedded](https://img.shields.io/badge/Embedded-ESP32-087C9E)
@@ -24,6 +24,12 @@
 *An overview of the components present in the source code. The two perception modes are experimental variants, not a single validated unified pipeline.*
 
 </div>
+
+## 🌐 Interactive Project Showcase
+
+[**Explore the 6-RSS project website →**](https://suibianba12138.github.io/6-RSS-Vision-Guided-Parallel-Platform/)
+
+The website introduces the platform with a responsive engineering illustration, an interactive explanation of the **laser-target** and **black-rectangle** vision routes, the control chain and links to the corresponding original implementations. The schematic and interactive walkthrough are **illustrations of source-code modules, not live camera feeds, simulations, or recorded experiments**. The website is maintained in the [`gh-pages` branch](https://github.com/suibianba12138/6-RSS-Vision-Guided-Parallel-Platform/tree/gh-pages).
 
 ## 🎬 Demonstration
 
