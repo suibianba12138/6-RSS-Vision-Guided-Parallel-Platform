@@ -2,7 +2,7 @@
 
 # 6-RSS Vision-Guided Parallel Platform
 
-### Engineering Motion from Vision
+### Vision-Guided Control of a 6-RSS Parallel Platform
 
 **An experimental six-actuator parallel-platform project connecting computer vision, inverse kinematics, a Python desktop controller, and ESP32 servo control.**
 
