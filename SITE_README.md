@@ -1,6 +1,6 @@
 # 6-RSS Showcase Website
 
-Redesigned V2 static, responsive portfolio site for the [6-RSS Vision-Guided Parallel Platform](https://github.com/suibianba12138/6-RSS-Vision-Guided-Parallel-Platform).
+Minimal, responsive research-style project page for the [6-RSS Vision-Guided Parallel Platform](https://github.com/suibianba12138/6-RSS-Vision-Guided-Parallel-Platform).
 
 The site is intended for GitHub Pages from the `gh-pages` branch at repository root.
 
@@ -14,7 +14,7 @@ From this branch's root, run `python3 -m http.server 8000`, then open `http://lo
 
 ## Evidence statement
 
-The robot in the hero section is an **illustrative SVG schematic**, not a photo, CAD-derived exact model, measured mechanism geometry or simulation result. The interactive vision explorer contains two selectable source-documented routes (laser target and black rectangle). Both pathways are diagrams representing separate modules found in the source repository; tab selection does **not** execute a control routine or perform live perception. The video panel is deliberately marked **coming soon**, and no performance metrics have been invented.
+The robot in the hero section is an **illustrative SVG schematic**, not a photo, CAD-derived exact model, measured mechanism geometry or simulation result. The paper-style project page documents two selectable source-level routes (laser target and black rectangle). Both pathways are explanatory diagrams representing separate modules found in the source repository; tab selection does **not** execute a control routine or perform live perception. The video panel is deliberately marked **coming soon**, and no performance metrics have been invented.
 
 ## Publishing on GitHub Pages
 
